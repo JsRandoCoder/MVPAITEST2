@@ -1,0 +1,15 @@
+// package.json
+{
+"name": "ara-cloudflare-worker",
+"version": "1.0.0",
+"private": true,
+"type": "module",
+"devDependencies": {
+"wrangler": "^3.80.0"
+},
+"scripts": {
+"deploy": "wrangler deploy",
+"dev": "wrangler dev",
+"d1:apply": "wrangler d1 migrations apply DB --remote"
+}
+}

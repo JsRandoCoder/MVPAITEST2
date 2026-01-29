@@ -1,0 +1,8 @@
+.
+├─ wrangler.toml
+├─ package.json
+├─ README.md
+├─ migrations/
+│ └─ 0001.sql
+└─ src/
+└─ index.ts

@@ -1,0 +1,20 @@
+# wrangler.toml
+name = "ara-cloudflare-worker"
+main = "src/index.ts"
+compatibility_date = "2025-12-16"
+
+[durable_objects]
+bindings = [
+{ name = "SCHEDULER", class_name = "Scheduler" }
+]
+
+[[migrations]]
+tag = "v1"
+new_classes = ["Scheduler"]
+
+# D1 binding is easiest to set in the dashboard (Settings -> Bindings).
+# If you prefer config here, add:
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "ara_db"
+# database_id = "..."
